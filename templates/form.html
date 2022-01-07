@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "layout.html" %}
+{% block content %}
+<head>
+    <style>
+        h1{
+        color:green;
+        text-align: center;
+        }
+        button {
+            background-color: brown;
+            width: 250px;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            text-align: center;
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    </style>
+</head>
+<h1>
+    Favourites Dishes and Drinks - Restaurant Guide
+</h1>
+<form action="/fav" method= "POST">
+   <p>name <input type = "text" name = "name" /></p>
+   <p>restaurant <input type = "text" name = "restaurant" /></p>
+   <p>fav_food <input type = "text" name = "fav_food" /></p>
+   <p>fav_drink <input type = "text" name = "fav_drink" /></p>
+   <p><input type = "submit" value = "Submit" /></p>
+</form>
+{% endblock %}
+</html>

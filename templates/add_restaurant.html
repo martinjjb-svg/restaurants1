@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "layout.html" %}
+{% block content %}
+<head>
+    <style>
+        h1{
+        color:green;
+        text-align: center;
+        }
+        button {
+            background-color: brown;
+            width: 250px;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            text-align: center;
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    </style>
+</head>
+<h1>
+    Favourites Restaurant Guide
+</h1>
+<form action="/res" method= "POST">
+   <p>restaurant name <input type = "text" name = "name" /></p>
+   <p>address <input type = "text" name = "address" /></p>
+   <p>nationality <input type = "text" name = "nationality" /></p>
+   <p>tel <input type = "number" name = "tel" /></p>
+   <p>comment <input type = "text" name = "comment" /></p>
+   <p>rating <input type = "number" name = "rating" /></p>
+   <p><input type = "submit" value = "Submit" /></p>
+</form>
+{% endblock %}
+</html>
